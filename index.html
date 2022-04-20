@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="pwa.webmanifest" />
+        <title>Elden PWA</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                animation: dark 6s infinite linear alternate;
+            }
+
+            @keyframes dark {
+                0% {
+                    background: rgba(0, 0, 0, 0.6);
+                }
+
+                100% {
+                    background: rgba(0, 0, 0, 1);
+                }
+            }
+
+            .container {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            .title {
+                opacity: 0.7;
+                transition: all 0.5s ease-in-out;
+                color: #fff;
+            }
+
+            .title:hover {
+                opacity: 1;
+            }
+
+            .poster-list {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+            }
+
+            .poster {
+                width: 600px;
+                height: auto;
+            }
+
+            .melina {
+                cursor: pointer;
+                height: 375px;
+                width: auto;
+                margin-left: 30px;
+                animation: kira 4s infinite linear alternate;
+            }
+
+            @keyframes kira {
+                0% {
+                    opacity: 10%;
+                }
+                100% {
+                    opacity: 100%;
+                }
+            }
+
+            img[alt] {
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h3 class="title">Elden Ring</h3>
+            <div class="poster-list">
+                <img src="/images/Elden-Ring.jpg" alt="elden" class="poster" />
+                <img src="/images/melina.jpg" alt="wood is gone lol XD" class="melina" id="melina" />
+            </div>
+        </div>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js')
+            }
+
+            const button = document.getElementById('melina')
+            button.addEventListener('click', e => {
+                Notification.requestPermission().then(function (result) {
+                    if (result === 'granted') {
+                        sendNotification()
+                    }
+                })
+            })
+
+            function sendNotification() {
+                const myNotification = new Notification('Melina', {
+                    body: `I'm not wood!!!`,
+                    icon: '/images/melina.jpg'
+                })
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+{
+    "name": "Elden Progressive Web App",
+    "short_name": "EldenPWA",
+    "description": "Progressive Web App for Elden Ring",
+    "icons": [
+        {
+            "src": "icons/icon-360.png",
+            "sizes": "32*32",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-360.png",
+            "sizes": "64*64",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-360.png",
+            "sizes": "128*128",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-360.png",
+            "sizes": "256*256",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "theme_color": "#000",
+    "background_color": "#000"
+}
