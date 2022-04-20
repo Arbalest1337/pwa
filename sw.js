@@ -1,5 +1,5 @@
-const cacheName = 'myPwaCache-v1'
-const cacheList = ['/index.html', '/images/Elden-Ring.jpg', '/images/melina.jpg']
+const cacheName = 'myPwaCache-v2'
+const cacheList = ['./index.html', './images/Elden-Ring.jpg', './images/melina.jpg']
 
 // install
 self.addEventListener('install', e => {

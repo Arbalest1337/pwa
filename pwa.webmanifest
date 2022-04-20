@@ -4,22 +4,22 @@
     "description": "Progressive Web App for Elden Ring",
     "icons": [
         {
-            "src": "icons/icon-360.png",
+            "src": "icons/256.png",
             "sizes": "32*32",
             "type": "image/png"
         },
         {
-            "src": "icons/icon-360.png",
+            "src": "icons/256.png",
             "sizes": "64*64",
             "type": "image/png"
         },
         {
-            "src": "icons/icon-360.png",
+            "src": "icons/256.png",
             "sizes": "128*128",
             "type": "image/png"
         },
         {
-            "src": "icons/icon-360.png",
+            "src": "icons/256.png",
             "sizes": "256*256",
             "type": "image/png"
         }

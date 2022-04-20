@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="manifest" href="pwa.webmanifest" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="manifest" href="./pwa.webmanifest" />
         <title>Elden PWA</title>
         <style>
             * {
@@ -82,14 +83,14 @@
         <div class="container">
             <h3 class="title">Elden Ring</h3>
             <div class="poster-list">
-                <img src="/images/Elden-Ring.jpg" alt="elden" class="poster" />
-                <img src="/images/melina.jpg" alt="wood is gone lol XD" class="melina" id="melina" />
+                <img src="./images/Elden-Ring.jpg" alt="elden" class="poster" />
+                <img src="./images/melina.jpg" alt="wood is gone lol XD" class="melina" id="melina" />
             </div>
         </div>
 
         <script>
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/sw.js')
+                navigator.serviceWorker.register('./sw.js')
             }
 
             const button = document.getElementById('melina')
@@ -104,7 +105,7 @@
             function sendNotification() {
                 const myNotification = new Notification('Melina', {
                     body: `I'm not wood!!!`,
-                    icon: '/images/melina.jpg'
+                    icon: './images/melina.jpg'
                 })
             }
         </script>
