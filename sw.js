@@ -1,4 +1,4 @@
-const cacheName = 'myPwaCache-v2'
+const cacheName = 'myPwaCache-v1'
 const cacheList = ['./index.html', './images/Elden-Ring.jpg', './images/melina.jpg']
 
 // install
