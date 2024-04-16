@@ -4,4 +4,4 @@ Work offline with Service workers 😏
 Use Notification 😆  
 Add to home screen with manifest 😎  
   
-preview https://arbalest-dcmk.github.io/pwa/
+preview https://arbalest1337.github.io/pwa/
